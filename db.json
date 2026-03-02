@@ -1,0 +1,22 @@
+{
+    "questions":[
+  {
+    "id":1,
+    "text": "How often do you study?",
+    "answers": [
+      { "option": "a", "text": "Every day", "score": 3 },
+      { "option": "b", "text": "Sometimes", "score": 2 },
+      { "option": "c", "text": "Rarely", "score": 1 }
+    ]
+  },
+  {
+    "id":2,
+    "text": "Do you like programming?",
+    "answers": [
+      { "option": "a", "text": "Yes", "score": 3 },
+      { "option": "b", "text": "A little", "score": 2 },
+      { "option": "c", "text": "No", "score": 1 }
+    ]
+  }
+]
+}
