@@ -15,4 +15,7 @@
 <button class="button" (click)="total = getTotalScore()">Show Result</button>
 @if (total > 0) {
   <h2>Total Score: {{ total }}</h2>
+  @if (warningMessage) {
+    <p style="color: red">{{ warningMessage }}</p>
+  }
 }

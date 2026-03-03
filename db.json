@@ -1,22 +1,47 @@
 {
-    "questions":[
-  {
-    "id":1,
-    "text": "How often do you study?",
-    "answers": [
-      { "option": "a", "text": "Every day", "score": 3 },
-      { "option": "b", "text": "Sometimes", "score": 2 },
-      { "option": "c", "text": "Rarely", "score": 1 }
-    ]
-  },
-  {
-    "id":2,
-    "text": "Do you like programming?",
-    "answers": [
-      { "option": "a", "text": "Yes", "score": 3 },
-      { "option": "b", "text": "A little", "score": 2 },
-      { "option": "c", "text": "No", "score": 1 }
-    ]
-  }
-]
+  "questions": [
+    {
+      "id": 1,
+      "text": "Siz odatda ertalab uyg'onganingizdan kechasi uxlaganingizgacha (kechki uxlashgacha) necha marta siyasiz?",
+      "answers": [
+        { "text": "≤7", "score": 0 },
+        { "text": "8-14", "score": 1 },
+        { "text": ">15", "score": 2 }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Odatda tunda siyish uchun necha marta uyg'onasiz?",
+      "answers": [
+        { "text": "0", "score": 0 },
+        { "text": "1", "score": 1 },
+        { "text": "2", "score": 2 },
+        { "text": ">3", "score": 3 }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "To'satdan paydo bo'ladigan va kechiktirish qiyin bo'lgan siyish istagi sizda qanchalik tez-tez kuzatiladi?",
+      "answers": [
+        { "text": "hech qachon", "score": 0 },
+        { "text": "haftasiga bir martadan kam", "score": 1 },
+        { "text": "haftasiga bir marta yoki ko'proq", "score": 2 },
+        { "text": "taxminan kuniga bir marta", "score": 3 },
+        { "text": "kuniga 2-4 marta", "score": 4 },
+        { "text": "kuniga 5 marta yoki ko'proq", "score": 5 }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "To'satdan paydo bo'ladigan siyish istagini kechiktira olmaganligingiz sababli siydik oqib ketishi sizda qanchalik tez-tez kuzatiladi?",
+      "answers": [
+        { "text": "hech qachon", "score": 0 },
+        { "text": "haftasiga bir martadan kam", "score": 1 },
+        { "text": "haftasiga bir marta yoki ko'proq", "score": 2 },
+        { "text": "taxminan kuniga bir marta", "score": 3 },
+        { "text": "kuniga 2-4 marta", "score": 4 },
+        { "text": "kuniga 5 marta yoki ko'proq", "score": 5 }
+      ]
+    }
+  ]
 }

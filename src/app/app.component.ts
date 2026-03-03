@@ -20,6 +20,7 @@ export class AppComponent {
   }
 
   total: number = 0;
+  warningMessage: string = '';
   userAnswers: number[] = [];
 
   // selectAnswer(questionIndex: number, score: number) {
@@ -27,6 +28,17 @@ export class AppComponent {
   // }
 
   getTotalScore(): number {
-    return this.userAnswers.reduce((sum, score) => sum + (score || 0), 0);
+    const totalScore = this.userAnswers.reduce(
+      (sum, score) => sum + (score || 0),
+      0,
+    );
+
+    if ((this.userAnswers[2] || 0) < 2) {
+      this.warningMessage =
+        '3-savol bo‘yicha tanlangan javob balli 2 dan kichik!';
+    } else {
+      this.warningMessage = '';
+    }
+    return totalScore;
   }
 }
