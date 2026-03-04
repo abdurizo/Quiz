@@ -18,6 +18,7 @@
      font-family: Roboto-Regular;
      display: flex;
      margin: 10px 0;
+     cursor: pointer;
 }
 .input{
     padding-left: 5px;

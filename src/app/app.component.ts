@@ -33,12 +33,25 @@ export class AppComponent {
       0,
     );
 
-    if ((this.userAnswers[2] || 0) < 2) {
-      this.warningMessage =
-        '3-savol bo‘yicha tanlangan javob balli 2 dan kichik!';
-    } else {
-      this.warningMessage = '';
+    if (totalScore < 2) {
+      this.warningMessage = 'Сизда гиперактив қовуқ йўқ';
+    } else if ((this.userAnswers[2] || 0) < 2) {
+      this.warningMessage = 'Сизда гиперактив қовуқ йўқ';
+    } else if (totalScore >= 3 && totalScore <= 5) {
+      this.warningMessage = 'Сизда гиперактив қовуқ енгил даражада';
+    } else if (totalScore >= 6 && totalScore <= 11) {
+      this.warningMessage = 'Сизда гиперактив қовуқ ўрта даражада';
+    } else if (totalScore >= 12) {
+      this.warningMessage = 'Сизда Гиперактив қовуқ оғир даражада';
     }
+
+    // if ((this.userAnswers[2] || 0) < 2) {
+    //   this.warningMessage =
+    //     '3-savol bo‘yicha tanlangan javob balli 2 dan kichik!';
+    // } else {
+    //   this.warningMessage = '';
+    // }
+
     return totalScore;
   }
 }
