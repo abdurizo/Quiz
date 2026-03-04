@@ -1,4 +1,28 @@
 .button{
-    margin-top: 10px;
+    margin: 15px 0 10px;
     display: block;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-family: Roboto-Regular;
+    outline: none;
+    border: 1px solid #000;
+    background: none;
+    cursor: pointer;
+}
+.question{
+    font-family: Roboto-Bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.answer{
+     font-family: Roboto-Regular;
+     display: flex;
+     margin: 10px 0;
+}
+.input{
+    padding-left: 5px;
+}
+.warning_message{
+    color: red;
+    font-family: Roboto-Regular;
 }

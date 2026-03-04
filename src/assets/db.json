@@ -4,9 +4,9 @@
       "id": 1,
       "text": "Siz odatda ertalab uyg'onganingizdan kechasi uxlaganingizgacha (kechki uxlashgacha) necha marta siyasiz?",
       "answers": [
-        { "text": "≤7", "score": 0 },
+        { "text": "≤ 7", "score": 0 },
         { "text": "8-14", "score": 1 },
-        { "text": ">15", "score": 2 }
+        { "text": "> 15", "score": 2 }
       ]
     },
     {
@@ -16,7 +16,7 @@
         { "text": "0", "score": 0 },
         { "text": "1", "score": 1 },
         { "text": "2", "score": 2 },
-        { "text": ">3", "score": 3 }
+        { "text": "> 3", "score": 3 }
       ]
     },
     {

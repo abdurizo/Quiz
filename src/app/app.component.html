@@ -1,21 +1,24 @@
-@for (item of questionInterface; track item.id; let i = $index) {
-  <h2>{{ item.text }}</h2>
-  @for (answer of item.answers; track answer.text) {
-    <label>
-      <input
-        type="radio"
-        [value]="answer.score"
-        name="question{{ item.id }}"
-        [(ngModel)]="userAnswers[i]"
-      />
-      {{ answer.text }}
-    </label>
+<div class="container">
+  @for (item of questionInterface; track item.id; let i = $index) {
+    <h2 class="question">{{ item.text }}</h2>
+    @for (answer of item.answers; track answer.text) {
+      <label class="answer">
+        <input
+          type="radio"
+          [value]="answer.score"
+          name="question{{ item.id }}"
+          [(ngModel)]="userAnswers[i]"
+          
+        />
+        <span class="input">{{ answer.text }}</span>
+      </label>
+    }
   }
-}
-<button class="button" (click)="total = getTotalScore()">Show Result</button>
-@if (total > 0) {
-  <h2>Total Score: {{ total }}</h2>
-  @if (warningMessage) {
-    <p style="color: red">{{ warningMessage }}</p>
+  <button class="button" (click)="total = getTotalScore()">Show Result</button>
+  @if (total > 0) {
+    <h2>Total Score: {{ total }}</h2>
+    @if (warningMessage) {
+      <p class="warning_message">{{ warningMessage }}</p>
+    }
   }
-}
+</div>
