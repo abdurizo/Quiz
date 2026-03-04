@@ -5,10 +5,11 @@ import { QuestionInterface } from '../models/quiz';
   providedIn: 'root',
 })
 export class QuizService {
-  url = 'http://localhost:3000/questions';
+  url = 'assets/db.json';
   /** */
   async getQuestions(): Promise<QuestionInterface[]> {
-    const date = await fetch(this.url);
-    return (await date.json()) ?? [];
+    const response  = await fetch(this.url);
+    const data = await response.json();
+    return data.questions ?? [];
   }
 }
