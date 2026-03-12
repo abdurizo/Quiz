@@ -14,9 +14,9 @@
       </label>
     }
   }
-  <button class="button" (click)="total = getTotalScore()">Show Result</button>
+  <button class="button" (click)="total = getTotalScore()">Natijani ko'rsatish</button>
   @if (total > 0) {
-    <h2>Total Score: {{ total }}</h2>
+    <h2 class="ball">Umumiy ball: {{ total }}</h2>
     @if (warningMessage) {
       <p class="warning_message">{{ warningMessage }}</p>
     }
