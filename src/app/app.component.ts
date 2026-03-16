@@ -12,7 +12,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'quiz';
+  // title = '';
   questionInterface: QuestionInterface[] = [];
   constructor(private quizService: QuizService) {}
   async ngOnInit() {
@@ -34,23 +34,16 @@ export class AppComponent {
     );
 
     if (totalScore < 2) {
-      this.warningMessage = 'Сизда гиперактив қовуқ йўқ';
+      this.warningMessage = 'Sizda giperaktiv qovuq yo‘q';
     } else if ((this.userAnswers[2] || 0) < 2) {
-      this.warningMessage = 'Сизда гиперактив қовуқ йўқ';
+      this.warningMessage = 'Sizda giperaktiv qovuq yo‘q';
     } else if (totalScore >= 3 && totalScore <= 5) {
-      this.warningMessage = 'Сизда гиперактив қовуқ енгил даражада';
+      this.warningMessage = 'Sizda giperaktiv qovuq yengil darajada';
     } else if (totalScore >= 6 && totalScore <= 11) {
-      this.warningMessage = 'Сизда гиперактив қовуқ ўрта даражада';
+      this.warningMessage = 'Sizda giperaktiv qovuq o‘rta darajada';
     } else if (totalScore >= 12) {
-      this.warningMessage = 'Сизда Гиперактив қовуқ оғир даражада';
+      this.warningMessage = 'Sizda Giperaktiv qovuq og‘ir darajada';
     }
-
-    // if ((this.userAnswers[2] || 0) < 2) {
-    //   this.warningMessage =
-    //     '3-savol bo‘yicha tanlangan javob balli 2 dan kichik!';
-    // } else {
-    //   this.warningMessage = '';
-    // }
 
     return totalScore;
   }

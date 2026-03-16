@@ -7,6 +7,7 @@
     border: 1px solid #000;
     background: none;
     cursor: pointer;
+    font-size: 18px;
 }
 .question{
     font-size: 18px;
@@ -21,5 +22,6 @@
     padding-left: 5px;
 }
 .warning_message{
+    margin-top: 10px;
     color: red;
 }
